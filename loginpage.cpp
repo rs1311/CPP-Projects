@@ -1,5 +1,3 @@
-//the code does not seem to work. when i get time, i shall rebuild it
-
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -47,7 +45,7 @@ bool logging_in(){
           else{
             fstream file;
             file.open("data\\"+user+".txt");
-            file<<user<<endl<<pass<<endl<<secgiven;
+            file<<user<<endl<<newpass<<endl<<secgiven;
             file.close();
             cout<<"PASSWORD RESET SUCCESSFUL\n";
           }
